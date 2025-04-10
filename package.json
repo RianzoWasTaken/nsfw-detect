@@ -1,15 +1,26 @@
 {
-  "name": "nsfw-api",
+  "name": "nsfw-image-detector",
   "version": "1.0.0",
-  "description": "Detect NSFW content in images via URL",
+  "description": "A simple NSFW (Not Safe For Work) image detection tool using NSFWJS",
   "main": "api/index.js",
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "nsfw",
+    "image",
+    "detection",
+    "moderation",
+    "content",
+    "filter"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "@tensorflow/tfjs-node": "^4.11.0",
+    "canvas": "^2.11.2",
     "express": "^4.18.2",
-    "node-fetch": "^2.6.9",
-    "nsfwjs": "^2.4.0"
+    "multer": "^1.4.5-lts.1",
+    "nsfwjs": "^2.4.2"
   }
 }
