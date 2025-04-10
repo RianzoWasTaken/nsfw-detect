@@ -36,3 +36,4 @@ app.get('/', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`NSFW API running on http://localhost:${PORT}`);
 });
+module.exports = app
